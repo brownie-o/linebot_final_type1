@@ -9,10 +9,10 @@
 用POST取 [https://animalcrossing.soopoolleaf.com/tw/acnh/animalsearch/load_data.php] 的資料
 
 ## 使用說明  
-- 輸入村民的名字即可查找該村民的資訊  
+- 輸入島民的名字即可查找該島民的資訊  
 
 ![botIns](./imgs/linebot_ins.png)
 
-- (施工中)輸入動物物種可以查找該種類的所有動物資訊
+- (施工中)輸入物種可以查找該種類所有動物的資訊
 
 ![botIns2](./imgs/linebot_ins2.png)
