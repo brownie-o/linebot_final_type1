@@ -14,7 +14,16 @@ bot.on('message', event => {
     console.log(event)
   }
 
-  if (event.message.type === 'text') {
+  if (event.message.text.includes('說明')) {
+    event.reply({
+      type: 'text',
+      text: `您可以在狸端機入口站👾查找島民的個人資訊。
+      想送島民禮物時也可以參考島民個資內的 "顏色" 及 "風格" 來送禮。
+      
+      查詢方式: 
+      直接輸入島民的 "姓名" 即可！`
+    })
+  } else if (event.message.type === 'text') {
     villagers(event)
   }
 })
