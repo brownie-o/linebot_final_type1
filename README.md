@@ -10,7 +10,9 @@
 
 ## 使用說明  
 - 輸入村民的名字即可查找該村民的資訊  
-例如: 
+
 ![botIns](./imgs/linebot_ins.png)
 
 - (施工中)輸入動物物種可以查找該種類的所有動物資訊
+
+![botIns2](./imgs/linebot_ins2.png)
