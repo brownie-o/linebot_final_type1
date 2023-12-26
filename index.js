@@ -18,10 +18,10 @@ bot.on('message', event => {
     event.reply({
       type: 'text',
       text:
-      `   您可以在狸端機入口站👾查找島民的個人資訊。
+`您可以在狸端機入口站👾查找島民的個人資訊。
       
-  查詢方式: 
-  直接輸入島民的 "姓名" 即可！`
+查詢方式: 
+直接輸入島民的 "姓名" 即可！`
     })
   } else if (event.message.type === 'text') {
     villagers(event)
