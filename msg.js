@@ -1,0 +1,1 @@
+import villagers from './commands/villagers.js'
