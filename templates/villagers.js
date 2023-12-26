@@ -8,7 +8,7 @@ export default () => {
       aspectRatio: '20:15',
       aspectMode: 'fit',
       align: 'center',
-      margin: 'sm'
+      margin: 'lg'
     },
     body: {
       type: 'box',
