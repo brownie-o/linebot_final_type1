@@ -7,7 +7,6 @@ export default async (event) => {
   try {
     const id = event.message.text.trim()
     // id 會是 名字，性格，生日(月份?)，種類(Kind)
-    // 要驗證嗎...?
     const { data } = await axios.post('https://animalcrossing.soopoolleaf.com/tw/acnh/animalsearch/load_data.php', {
       // Payload
       Category: '',
@@ -121,5 +120,3 @@ export default async (event) => {
     console.log(error)
   }
 }
-
-// main()

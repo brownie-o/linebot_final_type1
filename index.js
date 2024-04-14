@@ -3,7 +3,6 @@ import linebot from 'linebot'
 import villagers from './commands/villagers.js'
 // import kind from './commands/kind.js'
 import kindVillagers from './commands/kindVillagers.js'
-import kindVillagers12up from './commands/kindVillagers12up.js'
 
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
@@ -16,8 +15,6 @@ bot.on('message', event => {
   if (process.env.DEBUG === 'true') {
     console.log(event)
   }
-
-  // const animal = ['鴨子', '食蟻獸', '狗', '兔子', '馬', '公牛', '青蛙', '狼', '河馬', '袋鼠', '熊', '無尾熊', '小熊', '猩猩', '犀牛', '猴子', '小鹿', '大象', '章魚', '鴕鳥', '老虎', '鳥', '雞', '貓', '老鼠', '倉鼠', '綿羊', '豬', '企鵝', '母牛', '山羊', '獅子', '松鼠', '鵰', '鱷魚']
 
   if (event.message.type === 'text') {
     if (event.message.text.includes('說明')) {
@@ -399,7 +396,7 @@ bot.on('message', event => {
         }
       })
     } else if (
-      // 12+
+      // 種族搜尋
       event.message.text.trim() === '鴨子' ||
       event.message.text.trim() === '狗' ||
       event.message.text.trim() === '兔子' ||
@@ -413,11 +410,6 @@ bot.on('message', event => {
       event.message.text.trim() === '綿羊' ||
       event.message.text.trim() === '豬' ||
       event.message.text.trim() === '企鵝' ||
-      event.message.text.trim() === '松鼠'
-    ) {
-      kindVillagers12up(event)
-    } else if (
-      // 12-
       event.message.text.trim() === '狼' ||
       event.message.text.trim() === '大象' ||
       event.message.text.trim() === '食蟻獸' ||
@@ -438,10 +430,12 @@ bot.on('message', event => {
       event.message.text.trim() === '山羊' ||
       event.message.text.trim() === '獅子' ||
       event.message.text.trim() === '鵰' ||
+      event.message.text.trim() === '松鼠' ||
       event.message.text.trim() === '鱷魚'
     ) {
       kindVillagers(event)
     } else {
+      // 姓名搜尋
       villagers(event)
     }
   }
